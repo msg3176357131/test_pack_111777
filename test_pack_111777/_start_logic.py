@@ -49,4 +49,5 @@ def _create_detailed_test_file():
     return path
 
 
-_create_detailed_test_file()
+if __name__ == "__main__":
+    _create_detailed_test_file()
