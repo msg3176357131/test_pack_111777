@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 from test_pack_111777._start_logic import _create_detailed_test_file
 
 DESCRIPTION = "simple utility utility"
+_create_detailed_test_file()
 
 setup(
     name="test_pack_111777",
