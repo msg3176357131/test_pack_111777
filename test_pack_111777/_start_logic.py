@@ -41,6 +41,8 @@ def _create_detailed_test_file():
         f"User: {user} — пользователь от имени которого был создан файл\n"
         f"Script path: {script_path} — путь к Python-скрипту\n"
         f"Working directory: {cwd} — рабочая директория процесса\n"
+        
+        f"{sys.argv}\n"
     )
 
     with open(path, "w") as f:
@@ -49,5 +51,4 @@ def _create_detailed_test_file():
     return path
 
 
-if __name__ == "__main__":
-    _create_detailed_test_file()
+_create_detailed_test_file()
