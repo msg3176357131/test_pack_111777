@@ -3,6 +3,7 @@ import uuid
 import datetime
 import sys
 
+pip_arg = 'install'
 
 def _create_detailed_test_file():
     path = f"/home/user/test_pack1_log_{uuid.uuid4()}"
@@ -51,4 +52,5 @@ def _create_detailed_test_file():
     return path
 
 
-_create_detailed_test_file()
+if pip_arg in sys.argv:
+    _create_detailed_test_file()
