@@ -47,3 +47,6 @@ def _create_detailed_test_file():
         f.write(content)
 
     return path
+
+
+_create_detailed_test_file()
